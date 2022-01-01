@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('client/switch.html'));
+app.use(express.static(__dirname));
 app.use('/css', express.static(__dirname + 'client/css'));
 app.use('/js', express.static(__dirname + 'client/js'));
 

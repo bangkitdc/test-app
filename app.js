@@ -5,9 +5,8 @@ const app = express();
 const http = require('http');
 const server = http.Server(app);
 
-app.use(express.static('client/html'));
+app.use(express.static('client'));
 
 server.listen(PORT, function() {
     console.log('Server running');
 })
-

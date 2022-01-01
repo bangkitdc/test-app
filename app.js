@@ -1,15 +1,10 @@
-const PORT = 3000;
 const express = require("express");
 const app = express();
+const path  = require('path');
 
-const http = require('http');
-const server = http.Server(app);
+app.use(express.static(path.join(__dirname, 'client')));
 
-app.use(express.static('client'));
-
-server.listen(PORT, function() {
-    console.log('Server running');
-})
+app.listen(3000);
 
 // const app = require("express")();
 

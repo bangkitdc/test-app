@@ -2,10 +2,7 @@ const app = require("express")();
 
 const PORT = process.env.PORT || 3000;
 
-app.get("", (req, res) => {
-  res.send("Hello world");
-});
+const http = requir('http');
+const server = http.Server(app);
 
-app.listen(PORT, () => {
-  console.log(`App up at port ${PORT}`);
-});
+app.use(express.static('client'));

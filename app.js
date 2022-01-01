@@ -7,7 +7,7 @@ app.use(express.static('client'));
 app.use('/css', express.static(__dirname + 'client/css'));
 app.use('/js', express.static(__dirname + 'client/js'));
 
-app.get('/', function(req, res) {
+app.get('', function(req, res) {
     res.sendFile(__dirname + '/switch.html');
 })
 

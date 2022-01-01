@@ -7,6 +7,10 @@ app.use(express.static('client'));
 app.use('/css', express.static(__dirname + 'client/css'));
 app.use('/js', express.static(__dirname + 'client/js'));
 
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+})
+
 app.listen(PORT, () => {
     console.log(`App up at port ${PORT}`)
 })

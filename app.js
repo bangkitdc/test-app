@@ -8,7 +8,7 @@ app.use('/css', express.static(__dirname + 'client/css'));
 app.use('/js', express.static(__dirname + 'client/js'));
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/switch.html');
 })
 
 app.listen(PORT, () => {

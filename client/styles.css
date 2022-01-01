@@ -50,7 +50,6 @@ div {
 }
 
 .rara {
-    display: none;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -71,6 +70,7 @@ div {
 }
 
 h1 {
+    text-align: center;
     text-shadow: 1px 1px 0 #ccc,
     1px 1px 0 rgb(204, 204, 204);
 }
